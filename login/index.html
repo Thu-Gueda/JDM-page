@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=512&id=115640&format=png" type="image/x-icon">
+    <script src="../scripts/login.js"></script>
+</head>
+
+<body>
+    <h1>Faça login</h1>
+    <main class="background">
+        <section id="base-login">
+            <div id="imagem-lateral"></div>
+            <div id="login">
+                <h2>Acessar page</h2>
+                <p id="cadastro">Para criar uma conta basta clicar em <a href="">cadastro</a> </p>
+                <form action="../ds-login" method="post">
+                    <fieldset> <!--Input email-->
+                        <legend><label class="material-symbols-outlined" for="id-mail">mail</label></legend>
+                        <input id="id-mail" nome="Name-mail" type="email" autocomplete="off" required
+                            placeholder="Coloque seu e-mail aqui"><br>
+                    </fieldset>
+                    <fieldset> <!--input de senha-->
+                        <legend><label class="material-symbols-outlined" for="id-pass">key</label></legend>
+                        <input type="password" name="pass" id="id-pass" required placeholder="Digite sua senha"><br>
+                    </fieldset>
+                    <!---->
+                    <input type="button" value="Esqueci senha">
+                    <input type="submit" value="entrar">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
