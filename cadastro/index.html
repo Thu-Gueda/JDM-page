@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <main>
+        <section class="campo-fora">
+            <h1>Coloque seus dados!</h1>
+            
+            <div class="campo">
+                <form autocomplete="on" action="vazio" method="post">
+                    <fieldset>
+                        <legend>Cadastro</legend>
+                        <!--nome-->
+                        <label for="nomeid">Nome:</label>
+                        <input required maxlength="50" type="text" name="nome" id="nomeid"
+                            placeholder="Digite seu nome completo"><br>
+
+                        <!--sobre-->
+                        <label for="idsobrenome">Sobrenome: </label>
+                        <input maxlength="200" type="text" name="sobrenome" id="idsobrenome"
+                            placeholder="Digite se sobrenome">
+
+                        <!--data-->
+                        <br><label for="dataid">Data de
+                            nacimento:</label>
+                        <input required type="date" name="data1" id="dataid">
+
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Dados</legend>
+                        <!--gmail-->
+                        <label for="imain">E-mail: </label>
+                        <input placeholder="Digite seu e-mail" type="email" required name="main" id="imain">
+
+                        <!--senha e confir-->
+                        <br><label for="idpass">Senha: </label>
+                        <input type="password" name="pass1" id="idpass" required maxlength="200"
+                            placeholder="Digite uma senha"><br>
+
+                        <label for="id2pass">Confirme a senha: </label>
+                        <input required maxlength="200" type="password" name="pass2" id="id2pass"
+                            placeholder="digite a senha novamente">
+                        <!--Dados e-mail e senha-->
+                    </fieldset>
+                    <input type="submit">
+                    <input type="reset">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
