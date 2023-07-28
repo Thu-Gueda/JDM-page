@@ -10,23 +10,25 @@
 </head>
 
 <body>
-    <main>
-        <section class="campo-fora">
+    <main id="cF">
+        <section class="campo_fora">
             <h1>Coloque seus dados!</h1>
-            
+
             <div class="campo">
                 <form autocomplete="on" action="vazio" method="post">
                     <fieldset>
                         <legend>Cadastro</legend>
-                        <!--nome-->
-                        <label for="nomeid">Nome:</label>
-                        <input required maxlength="50" type="text" name="nome" id="nomeid"
-                            placeholder="Digite seu nome completo"><br>
-
-                        <!--sobre-->
-                        <label for="idsobrenome">Sobrenome: </label>
-                        <input maxlength="200" type="text" name="sobrenome" id="idsobrenome"
-                            placeholder="Digite se sobrenome">
+                        <div class="info_basic">
+                            <!--nome-->
+                            <input type="text" name="name" id="nomeid" class="input" placeholder="">
+                            <div class="corte"></div>
+                            <label class="placeholder" for="nomeid">Nome:</label>
+                            <br>
+                            <!--sobrenome-->
+                            <input type="text" name="sobrenome" id="idsobrenome" class="input" placeholder="">
+                            <div class="corte"></div>
+                            <label for="idsobrenome" class="placeholder">sobrenome</label>
+                        </div>
 
                         <!--data-->
                         <br><label for="dataid">Data de
@@ -52,11 +54,11 @@
                         <!--Dados e-mail e senha-->
                     </fieldset>
                     <input type="submit">
-                    <input type="reset">
                 </form>
             </div>
         </section>
     </main>
+    <input id='hide' type="button" value="Ver fundo" onmouseenter="hide()" onmouseleave="hideoF()">
 </body>
 
 </html>

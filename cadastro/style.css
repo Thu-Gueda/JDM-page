@@ -9,7 +9,8 @@ body {
     background-size: cover;
 }
 
-section.campo-fora {
+section.campo_fora {
+    display: block;
     background-color: white;
     position: absolute;
     text-align: center;
@@ -24,7 +25,6 @@ section.campo-fora {
 
 h1 {
     color: #f71808;
-    background-color: ;
     text-shadow: -2px -1px 0px #6e5f5f;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
@@ -48,4 +48,18 @@ form {
 
     text-align: center;
 
+}
+
+input#hide {
+    position: relative;
+    border-radius: 17%;
+    left: 227px;
+    font-size: 30px;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    text-shadow: -4px -1px 0px #c52626;
+
+}
+fieldset{
+    height: 180px;
 }
