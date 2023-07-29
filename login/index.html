@@ -21,15 +21,20 @@
                 <h2>Acessar page</h2>
                 <p id="cadastro">Para criar uma conta basta clicar em <a href="../cadastro/index.html">cadastro</a> </p>
                 <form action="../ds-login" method="post">
-                    <fieldset> <!--Input email-->
-                        <legend><label class="material-symbols-outlined" for="id-mail">mail</label></legend>
-                        <input id="id-mail" nome="Name-mail" type="email" autocomplete="off" required
-                            placeholder="Coloque seu e-mail aqui"><br>
-                    </fieldset>
-                    <fieldset> <!--input de senha-->
-                        <legend><label class="material-symbols-outlined" for="id-pass">key</label></legend>
-                        <input type="password" name="pass" id="id-pass" required placeholder="Digite sua senha"><br>
-                    </fieldset>
+
+                    <div class="email">
+                        <fieldset> <!--Input email-->
+                            <legend><label class="material-symbols-outlined" for="id-mail">mail</label></legend>
+                            <input id="id-mail" nome="Name-mail" type="email" autocomplete="off" required
+                                placeholder=""><br>
+                        </fieldset>
+                    </div>
+                    <div class="pass">
+                        <fieldset> <!--input de senha-->
+                            <legend><label class="material-symbols-outlined" for="id-pass">key</label></legend>
+                            <input type="password" name="pass" id="id-pass" required placeholder="Digite sua senha"><br>
+                        </fieldset>
+                    </div>
                     <!---->
                     <input type="button" value="Esqueci senha">
                     <input type="submit" value="entrar">

@@ -13,52 +13,49 @@
     <main id="cF">
         <section class="campo_fora">
             <h1>Coloque seus dados!</h1>
+            <form action="">
+                <div class="Campo">
+                    <div class="form">
+                        <h2>Cadastro</h2>
 
-            <div class="campo">
-                <form autocomplete="on" action="vazio" method="post">
-                    <fieldset>
-                        <legend>Cadastro</legend>
-                        <div class="info_basic">
-                            <!--nome-->
-                            <input type="text" name="name" id="nomeid" class="input" placeholder="">
-                            <div class="corte"></div>
-                            <label class="placeholder" for="nomeid">Nome:</label>
-                            <br>
-                            <!--sobrenome-->
-                            <input type="text" name="sobrenome" id="idsobrenome" class="input" placeholder="">
-                            <div class="corte"></div>
-                            <label for="idsobrenome" class="placeholder">sobrenome</label>
+                        <div class="inputs">
+                            <span>Nome</span>
+                            <input type="text" required="required" />
+                            <i></i>
                         </div>
-
-                        <!--data-->
-                        <br><label for="dataid">Data de
-                            nacimento:</label>
-                        <input required type="date" name="data1" id="dataid">
-
-
-                    </fieldset>
-                    <fieldset>
-                        <legend>Dados</legend>
-                        <!--gmail-->
-                        <label for="imain">E-mail: </label>
-                        <input placeholder="Digite seu e-mail" type="email" required name="main" id="imain">
-
-                        <!--senha e confir-->
-                        <br><label for="idpass">Senha: </label>
-                        <input type="password" name="pass1" id="idpass" required maxlength="200"
-                            placeholder="Digite uma senha"><br>
-
-                        <label for="id2pass">Confirme a senha: </label>
-                        <input required maxlength="200" type="password" name="pass2" id="id2pass"
-                            placeholder="digite a senha novamente">
-                        <!--Dados e-mail e senha-->
-                    </fieldset>
-                    <input type="submit">
-                </form>
-            </div>
+                        <div class="inputs">
+                            <span>E-mail</span>
+                            <input type="email" required>
+                            <i></i>
+                        </div>
+                        <div class="inputs">
+                            <span>Senha</span>
+                            <input type="password" required="required" />
+                            <i></i>
+                        </div>
+                        <div class="inputs">
+                            <span>Confirme sua Senha</span>
+                            <input type="password" required="required" />
+                            <i></i>
+                        </div>
+                        <input type="submit" value="Cadastrar" />
+                    </div>
+                </div>
+            </form>
         </section>
     </main>
-    <input id='hide' type="button" value="Ver fundo" onmouseenter="hide()" onmouseleave="hideoF()">
+    <input type="checkbox" id="hide" onclick="hide()">
+    <script>
+        function hide() {//botao esconder cadastro
+            var hide = document.getElementById('hide')
+            if (hide.checked) {
+                var campo__fora = document.getElementById('cF').style.display = "none";
+            }
+            else {
+                var campo__fora = document.getElementById('cF').style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
