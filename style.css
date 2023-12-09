@@ -83,7 +83,7 @@ section#base-login {
 
 section#base-login>div#imagem-lateral {
     /*Imagem respansiva*/
-    background: url('../upload/miata.jpg') no-repeat center black;
+    background: url('miata.jpg') no-repeat center black;
     background-size: cover;
     display: block;
     min-height: 25vh;
